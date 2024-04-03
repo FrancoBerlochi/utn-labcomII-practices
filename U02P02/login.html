@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>inicio de sesión</h1>
+    <p>Para iniciar sesión debe rellenar la casilla e-mail con su mail que utilizó para esta cuenta, en clave poner la contraseña creada y una vez completado los campos darle al botón de submit</p>
+    <form action="action.php/" method="post" target="_self">
+      <fieldset>
+        <legend>Datos de inicio de sesión</legend>
+        <label for="e-mail">e-mail</label>
+        <br />
+        <input
+          type="email"
+          name="e-mail"
+          id="e-mail"
+          placeholder="Ingrese su e-mail"
+          required
+        />
+        <br />
+        <label for="clave">clave</label>
+        <br />
+        <input
+          type="password"
+          name="clave"
+          id="clave"
+          placeholder="Ingrese su clave"
+          required
+        />
+        <br />
+        <label for="datosUsuario">Recordar datos de usuario</label>
+        <input type="checkbox">
+        <br>
+        <br>
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
